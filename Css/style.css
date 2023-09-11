@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    overflow-x: hidden;
+}
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+
+
+.box{
+    /* max-width: 190px; */
+    display:flex;
+    justify-content: space-between;
+    margin: 2rem;
+    overflow-x: hidden;
+}
+
+
+/* Responsive layout  */
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .box{
+        display:flex;
+        flex-direction: column;
+    }
+}
+.boxtime{
+    display: flex;
+}
+
+.box_parent{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxtime_child{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid green;
+    margin: 1rem .7rem 1rem .7rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.Time_text{
+    color:white;
+    font-size: 3.5rem;
+}
+
+.Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    color:white;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.Text_details{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    display: flex;
+    font-size: 1.5rem;
+}
+.stack{
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+.img{
+    height:30rem;
+}
+/* Responsive  */
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+.img{
+    height: 15rem;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+    
+}
